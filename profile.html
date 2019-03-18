@@ -1,0 +1,433 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>this is a second try</p>
+</body>
+</html>
+<head>
+    <title>WDB - Sep18 - Week 05 - CSS Exercise</title>
+    <style>
+        body {
+            width: 75vw;
+            margin: 0 auto;
+            background-image: radial-gradient(#333333, #222222);
+        }
+
+        .title {
+            color: #f2f2f2;
+            margin: 2rem;
+        }
+
+        .card {
+            border: 1px solid black;
+            margin: 1rem;
+            padding: 2rem;
+            font-family: "Quicksand", "Roboto", "sans-serif";
+            box-shadow: 0 0 2rem rgba(0, 0, 0, 0.75);
+            background-color: white;
+            border-top-right-radius: 2rem;
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .icon {
+            background-image: url(https://i1.wp.com/it-club-oberland.ch/wp-content/uploads/2017/07/cropped-logo-1.png?fit=512%2C512);
+            background-size: 5rem;
+            background-repeat: no-repeat;
+            background-position: right top;
+        }
+
+        p,
+        details,
+        summary,
+        ul,
+        li {
+            letter-spacing: 0.2rem;
+            font-family: "Quicksand", "Roboto", "sans-serif";
+            text-align: justify;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            font-family: "Quicksand", "Roboto", "sans-serif";
+        }
+
+        a {
+            text-decoration: unset;
+        }
+
+        a:link {
+            color: black;
+        }
+
+        a:active {
+            color: black;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:hover {
+            background-color: #333333;
+            color: white;
+        }
+
+        ul {
+            margin: 0;
+            list-style-type: none;
+            padding: 1rem;
+        }
+
+        ul li {
+            margin: 0.5rem;
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        li:before {
+            content: "> ";
+            font-weight: bold;
+        }
+
+        button {
+            width: 19rem;
+            height: 2rem;
+            background-color: #222222;
+            border: 2px solid white;
+            color: white;
+            margin-top: 1rem;
+            margin-right: 1rem;
+            font-family: "Quicksand", "Roboto", "sans-serif";
+        }
+
+        button:hover {
+            background-color: #333333;
+        }
+
+        button:active {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="title">
+        <h1>WDB - Sep18 - Week 05 - CSS Exercises</h1>
+        <p>In the last week of the course, we introduced you to CSS, a markup language with which we can manipulate the
+            look and feel of HTML pages. In this weeks exercises, we'll have a look at some more CSS related topics.</p>
+        <button id="openDetailsBtn">OPEN / CLOSE ALL CARDS</button>
+        <button id="activateDeactiveCssBtn">ACTIVATE / DEACTIVE CSS</button>
+        <button id="themeCssBtn">Theme 1 / 2 CSS</button>
+    </section>
+    <div id="main">
+        <section class="card icon">
+            <h2>Links and References</h2>
+            <hr>
+            <details>
+                <summary>Show me links...</summary>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">Mozilla
+                            Dev</a></li>
+                    <li><a href="https://www.w3schools.com/cssref/" target="_blank">W3Schools</a></li>
+                    <li><a href="https://flukeout.github.io/" target="_blank">CSS Diner</a></li>
+                    <li><a href="https://www.w3.org/TR/CSS/" target="_blank">W3C</a></li>
+                    <li><a href="http://cssdeck.com/" target="_blank">CSS Deck</a></li>
+                    <li><a href="https://www.cssportal.com/css-style-editor/" target="_blank">CSS Portal</a></li>
+                    <li><a href="https://htmlcheatsheet.com/css/" target="_blank">Cheatsheet</a></li>
+                    <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a></li>
+                </ul>
+            </details>
+        </section>
+        <section class="card icon">
+            <h2>Exercise 01 - Research</h2>
+            <hr>
+            <details>
+                <summary>Show content...</summary>
+                <p>Work through the following tutorials on w3schools in regards to CSS:</p>
+                <ul>
+                    <li><a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS HOME</a></li>
+                    <li><a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">CSS Introduction</a></li>
+                    <li><a href="https://www.w3schools.com/css/css_syntax.asp" target="_blank">CSS Syntax</a></li>
+                    <li><a href="https://www.w3schools.com/css/css_howto.asp" target="_blank">CSS How to</a></li>
+                    <li><a href="https://www.w3schools.com/css/css_colors.asp" target="_blank">CSS Colors</a></li>
+                    <li><a href="https://www.w3schools.com/css/css_background.asp" target="_blank">CSS Backgrounds</a></li>
+                    <li><a href="https://www.w3schools.com/css/css_border.asp" target="_blank">CSS Borders</a></li>
+                    <li><a href="https://www.w3schools.com/css/css_margin.asp" target="_blank">CSS Margins</a></li>
+                    <li><a href="https://www.w3schools.com/css/css_padding.asp" target="_blank">CSS Padding</a></li>
+                    <li><a href="https://www.w3schools.com/css/css_dimension.asp" target="_blank">CSS Height/Width</a></li>
+                    <li><a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank">CSS Box Model</a></li>
+                </ul>
+                <p>Prepare a summary of at least two pages (GDocs). Extend your existing MindMap with your new acquired
+                    knowledge.</p>
+            </details>
+        </section>
+        <section class="card icon">
+            <h2>Exercise 02 - Selectors</h2>
+            <hr>
+            <details>
+                <summary>Show content...</summary>
+                <p>Have a look at Selectors on w3schools:</p>
+                <ul>
+                    <li><a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">CSS Selectors</a></li>
+                    <li><a href="https://www.w3schools.com/cssref/trysel.asp" target="_blank">CSS Selectors DEMO</a></li>
+                </ul>
+                <p>For now, only focus on following types of selectors:</p>
+                <ul>
+                    <li>Tag Selectors</li>
+                    <li>ID Selector</li>
+                    <li>Class Selector</li>
+                    <li>Universal Descendant Selector</li>
+                </ul>
+                <p>As you can see, these are the selectors you've encountered in the CSS Diner exercises. Try to
+                    understand
+                    these selectors, we'll have a deeper look into CSS Selectors later on. Extend your MindMap with
+                    information
+                    regarding CSS Selectors.</p>
+            </details>
+        </section>
+        <section class="card icon">
+            <h2>Exercise 03 - <br>Apply your knowledge</h2>
+            <hr>
+            <details>
+                <summary>Show content...</summary>
+                <p>Apply your newly won knowledge on your profile page. Try to make your profile stick out as much as
+                    possible.
+                    Make sure to bind your CSS externally, remove all inline CSS!</p>
+                <p>What we expect to find in your profile:</p>
+                <ul>
+                    <li>Color properties</li>
+                    <li>Margins / Paddings</li>
+                    <li>Width / Height</li>
+                    <li>Borders</li>
+                    <li>Use of at least 2 Descendant Selectors</li>
+                    <li>Use of at least 4 Class Selectors</li>
+                    <li>Use of at least 4 ID Selectors</li>
+                </ul>
+            </details>
+        </section>
+        <section class="card icon">
+            <h2>Delivery</h2>
+            <hr>
+            <details>
+                <summary>Show content...</summary>
+                <p>As with the last exercise, we expect a zip Archive for the delivery. The contents of your zip
+                    Archive
+                    should be:</p>
+                <ul>
+                    <li>WDB_CSS_WEEK05_NAME_SURNAME_RESEARCH.PDF</li>
+                    <li>WDB_CSS_WEEK05_NAME_SURNAME_MINDMAP.PDF</li>
+                    <li>WDB_CSS_WEEK05_NAME_SURNAME_PROFILE.HTML</li>
+                    <li>WDB_CSS_WEEK05_NAME_SURNAME_PROFILE.CSS</li>
+                </ul>
+                <p>Delivery date is 08:00 AM, Saturday, 20.10.2018.</p>
+            </details>
+        </section>
+    </div>
+    <script>
+        let isTheme1Active = true;
+        let styleTag = document.getElementsByTagName("style")[0];
+        let pageCss = styleTag.innerHTML;
+        let page2Css =
+            `
+		*{
+			box-sizing:border-box;
+		}
+
+		#main{
+			margin:0 auto;
+			width:80%;
+			height:100%;
+		}
+
+		body {
+            width: 80%;
+            margin: 1rem auto;
+			background-color:#f2f2f2;
+        }
+
+        .card {
+			float:left;
+			color:white;
+            padding: 2rem;
+            background-color: red;
+            border-top-right-radius: 1.5rem;
+			margin:1rem;
+			width:45%;
+		}
+
+		.card:last-child{
+			width:92.5%;
+		}
+
+        .icon {
+            background-image: url(http://cdn.shopify.com/s/files/1/1061/1924/products/Happy_Emoji_Icon_5c9b7b25-b215-4457-922d-fef519a08b06_grande.png?v=1513251037);
+            background-size: 3rem;
+            background-repeat: no-repeat;
+            background-position: right top;
+        }
+
+        p,
+        details,
+        summary,
+        ul,
+        li {
+            font-family: "Quicksand", "Roboto", "sans-serif";
+            text-align: justify;
+			color:white;
+        }
+
+        h1
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            font-family: "Quicksand", "Roboto", "sans-serif";
+			color:white;
+        }
+
+        a {
+            text-decoration: unset;
+			color:white;
+        }
+
+		a:link{
+			color:white;
+		}
+
+        a:active {
+            color: white;
+        }
+
+        a:visited {
+            color: white;
+        }
+
+        a:hover {
+            background-color: #333333;
+            color: white;
+        }
+
+        ul {
+            margin: 0;
+            list-style-type: none;
+            padding: 1rem;
+        }
+
+        ul li {
+            margin: 0.5rem;
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        li:before {
+            content: "> ";
+            font-weight: bold;
+			word-wrap:wrap;
+        }
+
+        button {
+            width: 100%;
+            height: 2rem;
+            background-color: white;
+            border: 2px solid black;
+            color: black;
+            margin-right: 1rem;
+			margin-bottom:1rem;
+            font-family: "Quicksand", "Roboto", "sans-serif";
+        }
+
+        button:hover {
+            background-color: #bbbbbb;
+        }
+
+        button:active {
+            background-color: #999999;
+        }
+
+		.title{
+			margin:0 auto;
+			width:35%
+		}
+
+		.title h1, .title p{
+			margin-top:2rem;;
+            color: red !important;
+        }
+
+		@media screen and (max-width:1010px){
+			.card{
+				width:43%;
+			}
+			.title{
+				margin:0 auto;
+				width:60%
+			}
+		}
+
+		@media screen and (max-width:730px){
+			.card{
+				width:100%;
+			}
+			.card:last-child{
+				width:100%;
+			}
+			.title{
+				margin:0 auto;
+				width:60%
+			}
+		}
+
+		`;
+        styleTag.innerHTML = pageCss;
+        let detailsBtn = document.getElementById("openDetailsBtn");
+        detailsBtn.addEventListener("click", function () {
+            for (let detail of document.querySelectorAll("details")) {
+                detail.open = !detail.open;
+            }
+        });
+        let cssBtn = document.getElementById("activateDeactiveCssBtn");
+        cssBtn.addEventListener("click", function () {
+            if (styleTag.innerHTML) {
+                styleTag.innerHTML = "";
+            } else {
+                if (isTheme1Active) {
+                    styleTag.innerHTML = pageCss;
+                } else {
+                    styleTag.innerHTML = page2Css;
+                }
+            }
+        });
+        let themeBtn = document.getElementById("themeCssBtn");
+        themeBtn.addEventListener("click", function () {
+            if (isTheme1Active) {
+                styleTag.innerHTML = page2Css;
+                isTheme1Active = !isTheme1Active;
+            } else {
+                styleTag.innerHTML = pageCss;
+                isTheme1Active = !isTheme1Active;
+            }
+        });
+    </script>
+</body>
+</html>
